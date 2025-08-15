@@ -2,6 +2,15 @@
 
 ✅ List of Required Verilog Modules (In Integration Order)
 
-1. Coordinate Input Parser (coord_parser.v)
-Role: Accepts raw coordinate stream (serial or parallel), extracts and validates (X, Y, Z) data.
-Details: Adds handshake for data-ready.
+# 1. 🧭 Module Name: coord_parser.v
+✅ Objectives
+
+The objective of the coord_parser module is to:
+
+Accept incoming raw coordinate data (e.g., from radar or sensor system).
+
+Extract (X, Y) values from the input stream.
+
+Validate that both X and Y are present.
+
+Output a data valid signal to the next module in the pipeline (e.g., cleaner).
